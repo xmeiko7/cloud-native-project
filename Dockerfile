@@ -13,5 +13,4 @@ ENTRYPOINT ["sh", "-c", "set -e && java -XX:+PrintFlagsFinal \
                                            -XX:+HeapDumpOnOutOfMemoryError \
                                            -XX:HeapDumpPath=/heapdump/heapdump.hprof \
                                            -XX:+UnlockExperimentalVMOptions \
-                                           -XX:+UseCGroupMemoryLimitForHeap \
                                            $JAVA_OPTS -jar cloud-native-project-0.0.1-SNAPSHOT.jar"]
