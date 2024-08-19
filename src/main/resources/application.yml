@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+
+management:
+  server:
+    port: 8080
+  endpoints:
+    web:
+      exposure:
+        include: prometheus,health
+  metrics:
+    enable:
+      all: true
+  endpoint:
+    prometheus:
+      enabled: true
